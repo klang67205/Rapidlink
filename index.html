@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Affordable web design in Wichita, KS. Fast turnaround, simple process for personal and business sites. Scale remotely with RapidLink Designs.">
+    <meta name="keywords" content="affordable web design Wichita KS, fast website builder Kansas, web design services, SEO optimization Wichita, digital services Kansas">
+    <!-- SEO Enhancements -->
+    <meta property="og:title" content="Affordable Web Design in Wichita, KS | RapidLink Designs">
+    <meta property="og:description" content="Fast, affordable websites for businesses and individuals in Wichita and beyond.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rapidlinkdesigns.com">
+    <meta property="og:image" content="https://example.com/logo.png"> <!-- Replace with your logo URL -->
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://rapidlinkdesigns.com">
+    <meta name="robots" content="index, follow">
+    <title>Affordable Web Design in Wichita, KS | RapidLink Designs</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "RapidLink Designs",
+      "description": "Fast, affordable web design services in Wichita, Kansas, with quick turnaround.",
+      "url": "https://rapidlinkdesigns.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "301 N Main St Suite 765",
+        "addressLocality": "Wichita",
+        "addressRegion": "KS",
+        "postalCode": "67202",
+        "addressCountry": "US"
+      },
+      "priceRange": "$",
+      "telephone": "+1-316-209-2176"
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        /* Global Styles */
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #1F2937; background: linear-gradient(to bottom, #F9FAFB 0%, #E5E7EB 100%); }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; margin-bottom: 20px; }
+        header, section, footer { padding: 80px 20px; text-align: center; position: relative; }
+        header { background: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%); color: white; clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        h1 { font-size: 3em; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); opacity: 0; animation: fadeInDown 1s ease-out forwards; }
+        p { max-width: 800px; margin: 0 auto 20px; line-height: 1.8; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        
+        /* Sections and Cards */
+        .services, .features, .pricing, .testimonials { display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+        .card { background: white; border-radius: 15px; padding: 30px; width: 320px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; position: relative; overflow: hidden; opacity: 0; animation: fadeInUp 0.5s ease-out forwards; }
+        .card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 5px; background: linear-gradient(to right, #3B82F6, #10B981); opacity: 0; transition: opacity 0.3s; }
+        .card:hover::before { opacity: 1; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .card svg { width: 40px; height: 40px; margin-bottom: 10px; fill: #3B82F6; }
+        
+        /* Animations */
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        /* Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            .card, h1 { animation: none; opacity: 1; transform: none; }
+        }
+        
+        /* Form */
+        form { max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        label { display: block; text-align: left; margin-bottom: 5px; font-weight: 500; }
+        input, textarea { width: 100%; padding: 15px; margin: 10px 0; border: 1px solid #D1D5DB; border-radius: 8px; font-size: 1em; }
+        button { background: linear-gradient(to right, #3B82F6, #10B981); color: white; border: none; cursor: pointer; transition: background 0.3s, box-shadow 0.3s; padding: 15px; border-radius: 8px; font-size: 1em; }
+        button:hover { background: linear-gradient(to right, #2563EB, #059669); box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        
+        /* Footer and Nav */
+        footer { background: linear-gradient(to top, #1E3A8A 0%, #3B82F6 100%); color: white; font-size: 0.9em; }
+        nav { margin: 20px 0; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: 500; transition: color 0.3s; position: relative; }
+        nav a:hover { color: #10B981; }
+        nav a.active { color: #10B981; font-weight: bold; }
+        nav a.active::after { content: ''; position: absolute; bottom: -5px; left: 0; width: 100%; height: 2px; background: #10B981; }
+        
+        /* Media Queries */
+        @media (max-width: 768px) { .services, .features, .pricing, .testimonials { flex-direction: column; gap: 20px; } header { padding: 60px 20px; } h1 { font-size: 2.5em; } }
+        
+        /* Misc */
+        html { scroll-behavior: smooth; }
+        .wave { position: absolute; bottom: -1px; left: 0; width: 100%; height: 100px; background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxNDQwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PHBhdGggZD0iTTAgNTBMMTAwIDMwQzIwMCAxMCAzMDAgMzAgNDAwIDUwQzUwMCA3MCA2MDAgOTAgNzAwIDkwQzgwMCA5MCA5MDAgNzAgMTAwMCA1MEMxMTAwIDMwIDEyMDAgMTAgMTMwMCAzMEMxNDAwIDUwIDE0NDAgNTAgMTQ0MCA1MFYwSDB6IiBmaWxsPSIjRjlGQUZCIi8+PC9zdmc+') no-repeat bottom / cover; }
+        
+        /* Back to Top */
+        #back-to-top { position: fixed; bottom: 20px; right: 20px; background: #3B82F6; color: white; border: none; padding: 10px 15px; border-radius: 50%; cursor: pointer; display: none; transition: opacity 0.3s; opacity: 0.8; }
+        #back-to-top:hover { background: #2563EB; opacity: 1; }
+        
+        /* Accessibility: Focus States */
+        a:focus, button:focus { outline: 2px solid #10B981; outline-offset: 2px; }
+        
+        /* Map Styles */
+        iframe { width: 100%; height: 450px; margin: 30px auto 0; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); display: block; border: 0; }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header id="hero" role="banner">
+        <div class="container">
+            <h1>RapidLink Designs: Fast, Affordable Web Design</h1>
+            <p style="font-size: 1.2em;">Simplify your online presence in Wichita, KS and beyond. Professional sites ready in days—not weeks.</p>
+            <nav role="navigation" aria-label="Main navigation">
+                <a href="#services">Services</a>
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button onclick="scrollToSection('contact')">Get a Free Quote</button>
+        </div>
+        <div class="wave"></div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services">
+                <div class="card" style="animation-delay: 0s;">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" title="Custom Web Design Icon"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                    <h3>Custom Web Design</h3>
+                    <p>Personal or business sites built for speed and style.</p>
+                </div>
+                <div class="card" style="animation-delay: 0.1s;">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" title="Content & SEO Icon"><path d="M21 13v10h-6v-6H9v6H3V13h18zM12 2 2 12h5v2h10v-2h5z"></path></svg>
+                    <h3>Content & SEO</h3>
+                    <p>Optimized content and ranking boosts for better visibility.</p>
+                </div>
+                <div class="card" style="animation-delay: 0.2s;">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" title="Digital Add-Ons Icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm1-13h-2v6h-2v2h2v2h2v-2h2v-2h-2V7z"></path></svg>
+                    <h3>Digital Add-Ons</h3>
+                    <p>E-commerce, maintenance, and integrations made simple.</p>
+                </div>
+                <div class="card" style="animation-delay: 0.3s;">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" title="Consulting & Optimization Icon"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1 .9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14zm-5-7l-3 3.5L9 13l-4 5h14z"></path></svg>
+                    <h3>Consulting & Optimization</h3>
+                    <p>SEO audits, speed tweaks, analytics setup for peak performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Our Web Builder's Toolkit</h2>
+            <p>Combining expert skills in coding, design, and optimization for pro results.</p>
+            <div class="features">
+                <div class="card" style="animation-delay: 0s;">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" title="Custom Coding Icon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+                    <h3>Custom Coding</h3>
+                    <p>Tailored, error-free code for unique needs.</p>
+                </div>
+                <div class="card" style="animation-delay: 0.1s;">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" title="Rapid Prototyping Icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3-13.5V9l-6 3 6 3v2.5l-6-3z"></path></svg>
+                    <h3>Rapid Prototyping</h3>
+                    <p>Design and content ready in hours.</p>
+                </div>
+                <div class="card" style="animation-delay: 0.2s;">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" title="Mobile Optimization Icon"><path d="M15 1H9v2h6V1zm-4 13h2V8h-2v6zm8.03-6.61l1.42-1.42c-.43-.51-.9-.99-1.41-1.41l-1.42 1.42C16.3 4.44 14.19 4 12 4c-2.19 0-4.3.44-6.22 1.25l-1.42-1.42c-.51.42-.99.9-1.41 1.41l1.42 1.42C3.44 7.7 3 9.81 3 12c0 2.19.44 4.3 1.25 6.22l-1.42 1.42c.42.51.9.99 1.41 1.41l1.42-1.42C7.7 19.56 9.81 20 12 20c2.19 0 4.3-.44 6.22-1.25l1.42 1.42c.51-.42.99-.9 1.41-1.41l-1.42-1.42C19.56 16.3 20 14.19 20 12c0-2.19-.44-4.3-1.25-6.22zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"></path></svg>
+                    <h3>Mobile Optimization</h3>
+                    <p>Touch-friendly, fast-loading on all devices with animations.</p>
+                </div>
+                <div class="card" style="animation-delay: 0.3s;">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" title="SEO & Security Icon"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2zm0-4h2v2h-2zm0-4h2v2h-2z"></path></svg>
+                    <h3>SEO & Security</h3>
+                    <p>Built-in tools for rankings and data protection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing Tiers</h2>
+            <div class="pricing">
+                <div class="card" style="animation-delay: 0s;">
+                    <h3>Basic - $99</h3>
+                    <p>Single-page site, basic design & SEO. Turnaround: 1-2 days.</p>
+                    <button onclick="scrollToSection('contact')">Get Started</button>
+                </div>
+                <div class="card" style="animation-delay: 0.1s;">
+                    <h3>Standard - $299</h3>
+                    <p>Up to 5 pages, enhanced SEO, 1-month maintenance. Turnaround: 3-5 days.</p>
+                    <button onclick="scrollToSection('contact')">Get Started</button>
+                </div>
+                <div class="card" style="animation-delay: 0.2s;">
+                    <h3>Premium - $499</h3>
+                    <p>Advanced features, e-commerce, 3-month maintenance. Turnaround: 5-7 days.</p>
+                    <button onclick="scrollToSection('contact')">Get Started</button>
+                </div>
+            </div>
+            <p style="margin-top: 30px; font-style: italic;">Need custom services like SEO audits or analytics? Contact for a personalized quote—starting at $49.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials">
+                <div class="card" style="animation-delay: 0s;">
+                    <p>"RapidLink transformed our outdated site into a modern, user-friendly platform in just three days. The affordability was a huge plus for our small shop!"</p>
+                    <cite>- Sarah Johnson, Local Bakery Owner, Wichita</cite>
+                </div>
+                <div class="card" style="animation-delay: 0.1s;">
+                    <p>"Their SEO optimization helped my consulting business rank higher on Google, bringing in more clients. Professional and efficient service all around."</p>
+                    <cite>- Mark Thompson, Business Consultant</cite>
+                </div>
+                <div class="card" style="animation-delay: 0.2s;">
+                    <p>"I needed a simple personal portfolio site, and RapidLink delivered exactly what I wanted at a fraction of the cost. Highly recommend for freelancers."</p>
+                    <cite>- Emily Rodriguez, Graphic Designer</cite>
+                </div>
+                <div class="card" style="animation-delay: 0.3s;">
+                    <p>"The team added e-commerce features to our retail site seamlessly. Turnaround was quick, and maintenance support has been top-notch."</p>
+                    <cite>- David Lee, Retail Store Manager, Wichita</cite>
+                </div>
+                <div class="card" style="animation-delay: 0.4s;">
+                    <p>"As a non-profit, budget was tight, but RapidLink provided an optimized site with great analytics setup. We've seen increased donations since launch."</p>
+                    <cite>- Lisa Patel, Non-Profit Director</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About RapidLink Designs</h2>
+            <p>With over 5 years of experience in web development, I founded RapidLink Designs to empower small businesses in Wichita with affordable digital solutions. It all started when I helped my family's local shop go online during a challenging economic period, turning their fortunes around with a simple yet effective website. Today, I'm passionate about delivering fast, high-quality designs that help entrepreneurs thrive without breaking the bank.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/xkgblgvn" method="POST" id="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="message">Tell us about your project</label>
+                <textarea id="message" name="message" placeholder="Tell us about your project" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+            <p style="margin-top: 20px;">Address: 301 N Main St Suite 765, Wichita, KS 67202 | Phone: (316) 209-2176</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12599.717155072977!2d-97.3375459!3d37.6871761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87bb84b3b2f3b3b7%3A0x8b2d2d2d2d2d2d2d!2sWichita%2C%20KS!5e0!3m2!1sen!2sus!4v1721160000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>© 2025 RapidLink Designs. All rights reserved.</p>
+            <p><a href="#privacy" style="color: white; text-decoration: none;">Privacy Policy</a> | <a href="#terms" style="color: white; text-decoration: none;">Terms of Service</a></p>
+            <div id="privacy" style="text-align: left; max-width: 800px; margin: 20px auto; display: none;">
+                <h3>Privacy Policy</h3>
+                <p>We collect minimal data (name, email) for services. We don't sell info and comply with data laws. Contact us for questions.</p>
+            </div>
+            <div id="terms" style="text-align: left; max-width: 800px; margin: 20px auto; display: none;">
+                <h3>Terms of Service</h3>
+                <p>Services as described; no refunds after delivery. We reserve rights to refuse projects.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <script>
+        // Helper Function to Scroll to Section
+        function scrollToSection(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        // Form Validation
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            const email = document.getElementById('email').value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                e.preventDefault();
+            }
+        });
+
+        // Scroll Spy for Active Nav
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('nav a');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Toggle Legal Sections
+        document.querySelectorAll('footer a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(e.target.href);
+                target.style.display = target.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+
+        // Back to Top Visibility
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            backToTop.style.display = window.pageYOffset > 300 ? 'block' : 'none';
+        });
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M82RWDCKHB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-M82RWDCKHB');
+    </script>
+    <!-- Cookie Consent Banner -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+      window.cookieconsent.initialise({
+        "palette": {"popup": {"background": "#1E3A8A"}, "button": {"background": "#3B82F6"}},
+        "theme": "classic",
+        "content": {"message": "This site uses cookies for analytics.", "dismiss": "Got it!", "link": "Learn more", "href": "#privacy"}
+      });
+    </script>
+</body>
+</html>
